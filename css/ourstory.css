@@ -37,7 +37,7 @@ nav {
     align-items: center;
 }
 
-.navlink > a {
+.navlink>a {
     display: block;
     text-decoration: none;
     color: gray;
@@ -45,7 +45,7 @@ nav {
     font-size: 10px;
 }
 
-.navlink > a:hover {
+.navlink>a:hover {
     transition: .8s ease;
     color: black;
 }
@@ -57,13 +57,20 @@ h1 {
 }
 
 h2 {
-    font-size: 30px; 
+    font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+    font-size: 30px;
+    font-family: 'Piazzolla', serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
 img {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -71,7 +78,6 @@ img {
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
-    padding-left: 9px;
 }
 
 .section {
@@ -89,12 +95,22 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.menu{
+.left-content, .right-content {
     grid-column: 1/13;
-    padding-right: 60px;
-    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    align-content: flex-start;
+
+}
+
+.p-footer {
+    font-size: 13px;
 }
 
 footer {
@@ -106,43 +122,57 @@ footer {
 }
 
 /********************* MEDIA QUERY - 620 ****************/
+
 @media only screen and (min-width:620px) {
+    .right-content {
+        grid-column: 7/13;
+    }
+    .left-content {
+        grid-column: 1/7;
+    }
     h1 {
         font-size: 30px;
     }
-
-
     h2 {
-        font-size: 40px; 
+        font-size: 40px;
     }
-
+    h3 {
+        font-size: 30px;
+    }
     p {
         padding-left: 0;
         font-size: 13px;
     }
-
-    .navlink > a {
+    .navlink>a {
         font-size: 14px;
     }
 }
 
 /********************* MEDIA QUERY - 900 ****************/
+
 @media only screen and (min-width:900px) {
+    .right-content {
+        grid-column: 7/13;
+    }
+    .left-content {
+        grid-column: 1/7;
+    }
     h1 {
         font-size: 30px;
     }
-
     h2 {
-        font-size: 60px; 
+        font-size: 60px;
     }
-    
+    h3 {
+        font-size: 50px;
+    }
     p {
         padding-left: 0;
+        font-size: 20px;
     }
-    .navlink > a {
+    .navlink>a {
         font-size: 16px;
     }
-    
     .description {
         grid-column: 1/13;
     }
