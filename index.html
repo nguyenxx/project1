@@ -11,81 +11,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-    <style>
-        section {
-            position: relative;
-            width: 100%;
-        }
-
-        section .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            /* to center*/
-            transform: translate(-50%, 100%); 
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            background-color: transparent;
-            border: 2px solid white;
-        }
-
-        section .btn:hover {
-            background-color: white;
-            color: black;
-            transition: .8s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav>
         <h1>Crepeville</h1>
         <ul class="navlinks">
-            <li class="navlink"><a href="index.html">Blog</a></li>
-            <li class="navlink"><a href="about.html">About</a></li>
-            <li class="navlink"><a href="contact.html">Contact</a></li>
+            <li class="navlink"><a href="index.html" style="color: black;">Homepage</a></li>
+            <li class="navlink"><a href="menu.html">Menu</a></li>
+            <li class="navlink"><a href="reservation.html">Make a Reservation</a></li>
+            <li class="navlink"><a href="ourstory.html">Our Story</a></li>
+            <li class="navlink"><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section>
-            <img src="images/blue-crepe2.jpg">
+            <img src="images/blue-crepe2.jpg" alt="blueberry crepe (cover image)">
             <button class="btn">MAKE A RESERVATION</button>
         </section>
         <div class="description">
-            <h2>Our top picks of the week</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam,</p>
+            <h2>Our top picks for the week</h2>
+            <p style="text-align: center;"> Our first-time customer? Don't know what to order? <br>
+                Check out our top dishes for the week chosen by our chefs!
+            </p>
         </div>
         <div class="product1">
-            Product one information.
+            <figure>
+                <img src="images/blue-straw.jpg" alt="strawberry-blueberry crepe">
+                <figcaption>
+                    <h4>Morning Blues</h4>
+                    <p>blueberries and raspberries | nutella |
+                        chocolate sauce or maple syrup</p>
+                </figcaption>
+            </figure>
         </div>
         <div class="product2">
-            Product two information.
+            <figure>
+                <img src="images/orange-flavor.jpg" alt="orange flavored crepe">
+                <figcaption>
+                    <h4>Jammin' Orange</h4>
+                    <p>whipped cream cheese | orange jam | powdered sugar | caramel sauce</p>
+                </figcaption>
+            </figure>
         </div>
         <div class="product3">
-            Product three information.
+            <figure>
+                <img src="images/waffles.jpg" alt="strawberry-blueberry crepe">
+                <figcaption>
+                    <h4>Belgian-style Waffles</h4>
+                    <p>blueberries and raspberries
+                    | caramel drizzles or maple syrup</p>
+                </figcaption>
+            </figure>
         </div>
         <div class="product4">
-            Product four information.
+            <figure>
+                <img src="images/mini-pancakes.jpg" alt="strawberry-blueberry crepe">
+                <figcaption>
+                    <h4>Mini Morning</h4>
+                    <p>classic mini pancakes
+                    | macadamia nuts | maple syrup | powdered sugar</p>
+                </figcaption>
+            </figure>
         </div>
-        <div class="social1">
-            Social 1
+        <div class="chefs">
+            <h3>Our Head Chefs</h3>
         </div>
-        <div class="social2">
-            Social 2
+        <div class="chef1">
+            <div class="card">
+                <img src="images/chef2-1.jpg" alt="Avatar" style="width:100%">
+                <div class="caption">
+                  <h4>David Chang</h4> 
+                  <p>Rising Star Chef of the Year</p> 
+                </div>
+            </div>
         </div>
-        <div class="social3">
-            Social 3
+        <div class="chef2">
+            <div class="card">
+                <img src="images/chef1-1.jpg" alt="Avatar" style="width:100%">
+                <div class="caption">
+                  <h4>Joe Randall</h4> 
+                  <p>Dean of Southern Cuisine</p> 
+                </div>
+            </div>
+        </div>
+        <div class="chef3">
+            <div class="card">
+                <img src="images/chef3.jpg" alt="Avatar" style="width:100%">
+                <div class="caption">
+                  <h4>Thomas Keller</h4> 
+                  <p>Best California Chef of 2017</p> 
+                </div>
+            </div>
         </div>
         <footer>
-            Footer
+            <p> Copyright &#169; 2020 - Crepesville. All Rights Reserved. | 
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-youtube"></i>
+            </p>
         </footer>
     </div>
 </body>

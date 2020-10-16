@@ -10,9 +10,9 @@ html {
     box-sizing: inherit;
 }
 
-.container>* {
+/*.container>* {
     background-color: #ccc;
-}
+}*/
 
 body {
     margin: 0;
@@ -24,7 +24,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
     margin: 0 auto;
     max-width: 1440px;
-    grid-gap: 1em;
+    /*grid-gap: 1em;
     /*justify-items: center; // horizontally
     align-items: center; //  vertically
     justify-content: center;
@@ -56,27 +56,124 @@ nav {
 .navlink > a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: gray;
     padding: 5px;
+    font-size: 10px;
 }
 
 .navlink > a:hover {
-    text-decoration: underline;
+    transition: .8s ease;
+    color: black;
 }
 
 h1 {
     flex-grow: 1;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 0;
+    padding: 8px;
 }
 
 img {
     max-width:100%;
     height:auto;
     display: block;
-    transition: .8s ease;
     margin: auto;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    padding-left: 9px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+section .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* to center*/
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 8px;
+    padding: 12px 24px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+section .btn:hover {
+    background-color: white;
+    color: black;
+    transition: .8s ease;
+}
+
+.description, .chefs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.chef1, .chef2, .chef3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.chefs, .chef1, .chef2, .chef3 {
+    background-color: #001a33;
+}
+
+.product1, .product2, .product3, .product4 {
+    padding-bottom: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 60%;
+    background-color: white;
+}
+
+.caption {
+    padding: 2px 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -103,15 +200,19 @@ section {
     grid-column: 1/13;
 }
 
-.social1 {
+.chefs {
     grid-column: 1/13;
 }
 
-.social2 {
+.chef1 {
     grid-column: 1/13;
 }
 
-.social3 {
+.chef2 {
+    grid-column: 1/13;
+}
+
+.chef3 {
     grid-column: 1/13;
 }
 
@@ -121,10 +222,42 @@ footer {
 
 /********************* MEDIA QUERY - 620 ****************/
 @media only screen and (min-width:620px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        padding-left: 0;
+    }
+
+    p {
+        padding-left: 0;
+    }
+
+    .navlink > a {
+        font-size: 14px;
+    }
+
+    section .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* to center*/
+        transform: translate(-50%, 80%);
+        color: white;
+        font-size: 12px;
+        padding: 12px 24px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+
     .description {
         grid-column: 1/13;
     }
-    
+
     .product1 {
         grid-column: 1/7;
     }
@@ -140,21 +273,52 @@ footer {
         grid-column: 7/13;
     }
 
-    .social1 {
+    .chef1 {
         grid-column: 1/5;
     }
 
-    .social2 {
+    .chef2 {
         grid-column: 5/9;
     }
 
-    .social3 {
+    .chef3 {
         grid-column: 9/13;
     }
 }
 
 /********************* MEDIA QUERY - 900 ****************/
 @media only screen and (min-width:900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        padding-left: 0;
+    }
+
+    p {
+        padding-left: 0;
+    }
+    .navlink > a {
+        font-size: 16px;
+    }
+
+    section .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* to center*/
+        transform: translate(-50%, 160%);
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    
     .description {
         grid-column: 1/13;
     }
@@ -173,15 +337,15 @@ footer {
     .product4 {
         grid-column: 10/13;
     }
-    .social1 {
+    .chef1 {
         grid-column: 1/5;
     }
 
-    .social2 {
+    .chef2 {
         grid-column: 5/9;
     }
 
-    .social3 {
+    .chef3 {
         grid-column: 9/13;
     }
 }
