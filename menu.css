@@ -89,7 +89,7 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.product1 {
+.menu{
     grid-column: 1/13;
     padding-right: 60px;
     padding-left: 60px;
@@ -109,11 +109,6 @@ footer {
 @media only screen and (min-width:620px) {
     h1 {
         font-size: 30px;
-    }
-
-    h4 {
-        padding-left: 0;
-        font-size: 16px;
     }
 
     p {

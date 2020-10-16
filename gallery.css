@@ -55,23 +55,6 @@ h1 {
     height: 100vh;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    background-color: orange;
-    align-items: center;
-    flex-basis: 200px;
-}
-
-.emoji-alone {
-    font-size: 2em;
-}
-
-.emoji {
-    font-size: 2em;
-    flex-grow: 1;
-}
-
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;

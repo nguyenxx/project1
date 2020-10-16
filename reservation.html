@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crepesville: Menu</title>
+
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Crepeville</h1>
+        <ul class="navlinks">
+            <li class="navlink"><a href="index.html">Homepage</a></li>
+            <li class="navlink"><a href="menu.html">Menu</a></li>
+            <li class="navlink"><a href="reservation.html" style="color: black;">Make a Reservation</a></li>
+            <li class="navlink"><a href="ourstory.html">Our Story</a></li>
+            <li class="navlink"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+            <img src="images/reservation-cover.png" alt="orange crepe (cover image)">
+            <div class="centered">
+                <h2>RESERVATIONS</h2>
+            </div>
+        </div>
+        <div class="r-info">
+            <h2>Ready to make a reservation?</h2>
+            <p>We accept a limited number of reservations up to
+                3 days in advance for parties up to ten guests.
+                Skip the line by booking a table!
+            </p>
+            <h3>CALL (514) 555-512</h3>
+        </div>
+        <div class="subscribe">
+            <p class="white-text align padding top"> Subscribe to our newsletter.</p>
+            <div class="login_bar">
+                <span class="login"> <input type="text" id="fname" name="firstname" placeholder="your email"></span>
+                <span class="subscribe_button" onclick="subscribeOnClick()">subscribe</span>
+                <span class="subscribing"></span>
+                <span class="thanks"> Thank you. You have been subscribed</span>
+            </div>
+        </div>
+        <div class="feedback">
+            <h2 class="white-text padding">Leave us a feedback</h2>
+            <form>
+                <label for="fname">
+                    <p>First Name</p>
+                </label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">
+                    <p>Last Name</p>
+                </label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">
+                    <p>Location of the Restaurant</p>
+                </label>
+                <select id="country" name="country">
+                    <option value="australia">Vienna, VA</option>
+                    <option value="canada">Centreville, VA</option>
+                    <option value="usa">Annandale, VA</option>
+                </select>
+
+                <label for="subject">
+                    <p>Comments/Feedback</p>
+                </label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input class="background" type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <p> Copyright &#169; 2020 - Crepesville. All Rights Reserved. |
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-youtube"></i>
+            </p>
+        </footer>
+        <script src="subscribe.js"></script>
+    </div>
+</body>
+
+</html>
