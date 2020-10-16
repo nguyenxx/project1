@@ -4,16 +4,6 @@ html {
     box-sizing: border-box;
 }
 
-*,*:before,*after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-/*.container>* {
-    background-color: #ccc;
-}*/
-
 body {
     margin: 0;
 }
@@ -24,12 +14,6 @@ body {
     grid-auto-rows: minmax(100px, auto);
     margin: 0 auto;
     max-width: 1440px;
-    /*grid-gap: 1em;
-    /*justify-items: center; // horizontally
-    align-items: center; //  vertically
-    justify-content: center;
-    align-content: center;
-    */
 }
 
 nav {
@@ -107,12 +91,12 @@ h2 {
     margin-bottom: 0;
 }
 
-section {
+.section {
     position: relative;
     width: 100%;
 }
 
-section .btn {
+.section .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,7 +112,7 @@ section .btn {
     border: 1px solid white;
 }
 
-section .btn:hover {
+.section .btn:hover {
     background-color: white;
     color: black;
     transition: .8s ease;
@@ -176,7 +160,7 @@ footer {
     align-items: center;
 }
 
-section {
+.section {
     grid-column: 1/13;
 }
 
@@ -240,7 +224,7 @@ footer {
         font-size: 14px;
     }
 
-    section .btn {
+    .section .btn {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -305,7 +289,7 @@ footer {
         font-size: 16px;
     }
 
-    section .btn {
+    .section .btn {
         position: absolute;
         top: 50%;
         left: 50%;
