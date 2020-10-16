@@ -1,0 +1,145 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #ededed;
+}
+
+.navlinks {
+    list-style-type: none;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navlink > a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.navlink > a:hover {
+    transition: .8s ease;
+    color: black;
+}
+
+h1 {
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+    font-size: 60px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    padding-left: 9px;
+}
+
+.section {
+    grid-column: 1/13;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product1 {
+    grid-column: 1/13;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer {
+    grid-column: 1/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************* MEDIA QUERY - 620 ****************/
+@media only screen and (min-width:620px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        padding-left: 0;
+        font-size: 16px;
+    }
+
+    p {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .navlink > a {
+        font-size: 14px;
+    }
+}
+
+/********************* MEDIA QUERY - 900 ****************/
+@media only screen and (min-width:900px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    p {
+        padding-left: 0;
+    }
+    .navlink > a {
+        font-size: 16px;
+    }
+    
+    .description {
+        grid-column: 1/13;
+    }
+}
