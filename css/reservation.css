@@ -66,6 +66,11 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
 img {
     max-width: 100%;
     height: auto;
