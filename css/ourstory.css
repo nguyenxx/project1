@@ -103,10 +103,14 @@ p {
     justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 30px;
     align-content: flex-start;
 
+}
+
+.right-content {
+    margin-right: 50px;
 }
 
 .p-footer {
