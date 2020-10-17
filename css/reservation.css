@@ -113,7 +113,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #476991;
 }
 
 .section {
@@ -222,7 +222,7 @@ form {
 }
 
 .subscribe_button:hover {
-    background-color: #222A33;
+    background-color: #476991;
     cursor: pointer;
 }
 
@@ -255,7 +255,7 @@ form {
 }
 
 .subscribing {
-    background: #CDD4DC;
+    background: #476991;
     height: 100%;
     width: 300px;
     z-index: 5;
@@ -294,6 +294,11 @@ form {
     transition: transform 0.5s ease 0s;
 }
 
+.font {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
 .thanks_active {
     -webkit-transform: translateY(-50px);
     -moz-transform: translateY(-50px);
@@ -314,9 +319,17 @@ input[type=submit] {
     background-color: black;
 }
 
+input[type=radio] {
+    margin-top: 15px;
+}
+
 input[type=text] {
     border: none;
     outline: none;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
 }
 
 .p-footer {

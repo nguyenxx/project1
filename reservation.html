@@ -49,7 +49,7 @@
                 <span class="login"> <input type="text" id="fname" name="firstname" placeholder="your email"></span>
                 <span class="subscribe_button" onclick="subscribeOnClick()">subscribe</span>
                 <span class="subscribing"></span>
-                <span class="thanks"> Thank you. You have been subscribed</span>
+                <span class="thanks font"> Thank you. You have been subscribed</span>
             </div>
         </div>
         <div class="feedback">
@@ -61,7 +61,7 @@
                 <input type="text" name="firstname" placeholder="Your name..">
 
                 <label>
-                   Last Name
+                    Last Name
                 </label>
                 <input type="text" name="lastname" placeholder="Your last name..">
 
@@ -75,9 +75,24 @@
                 </select>
 
                 <label>
+                    How was your experience at our restaurant?
+                </label> <br>
+                <input type="radio" name="rating" value="30">
+                <label>Unsatisfactory</label>
+                <input type="radio" name="rating" value="100">
+                <label>Okay</label>
+                <input type="radio" name="rating" value="100">
+                <label>Good</label>
+                <input type="radio" name="rating" value="30">
+                <label>Great</label> 
+                <input type="radio" name="rating" value="30">
+                <label>Awesome</label><br> <br>
+
+
+                <label>
                     Comments/Feedback
                 </label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea name="subject" placeholder="Leave your feedback here.." style="height:200px"></textarea>
 
                 <input class="background" type="submit" value="Submit">
             </form>
